@@ -29,8 +29,7 @@ public class HandleAlert {
 			System.out.println(driver.getTitle() + "   " + driver.getCurrentUrl());
 
 			driver.findElement(By.xpath("//button[text()='Click for JS Alert']")).click();
-			// org.openqa.selenium.UnhandledAlertException:
-			//org.openqa.selenium.NoAlertPresentException:
+			
 
 			Alert alert = driver.switchTo().alert(); // It will switch to the alert
 
